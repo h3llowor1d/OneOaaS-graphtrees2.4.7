@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>chart created with amCharts | amCharts</title>
+    <meta name="description" content="chart created using amCharts live editor" />
+
+    <!-- amCharts javascript sources -->
+    <script src="./js/vendors/emcharts/emcharts.js" type="text/javascript"></script>
+    <script src="./js/vendors/emcharts/serial.js" type="text/javascript"></script>
+
+    <!-- amCharts javascript code -->
+    <script type="text/javascript">
+        AmCharts.makeChart("chartdiv",
+                {
+                    "type": "serial",
+                    "pathToImages": "http://cdn.amcharts.com/lib/3/images/",
+                    "categoryField": "category",
+                    //"categoryField": "time-1",
+                    "startDuration": 1,
+                    "mouseWheelZoomEnabled": true,
+                    "categoryAxis": {
+                        "gridPosition": "start"
+                    },
+                    "trendLines": [],
+                    "graphs": [
+                        {
+                            "balloonText": "[[title]] of [[category]]:[[value]] time [[time-1]] ",
+                            "bullet": "round",
+                            "id": "AmGraph-1",
+                            "title": "graph 1",
+                            "type": "smoothedLine",
+                            "valueField": "column-1"
+                        },
+                        {
+                            "balloonText": "[[title]] of [[category]]:[[value]] time [[time-2]] ",
+                            "bullet": "square",
+                            "id": "AmGraph-2",
+                            "title": "graph 2",
+                            "type": "smoothedLine",
+                            "valueField": "column-2"
+                        }
+                    ],
+                    "chartScrollbar": {
+                        "autoGridCount": true,
+                        "graph": "AmGraph-2",
+                        "scrollbarHeight": 80
+                    },
+                    "chartCursor": {
+                        "limitToGraph":"AmGraph-2"
+                    },
+                    "guides": [],
+                    "valueAxes": [
+                        {
+                            "id": "ValueAxis-1",
+                            "title": "Axis title"
+                        }
+                    ],
+                    "allLabels": [],
+                    "balloon": {},
+                    "legend": {
+                        "useGraphSettings": true
+                    },
+                    "titles": [
+                        {
+                            "id": "Title-1",
+                            "size": 15,
+                            "text": "Chart Title"
+                        }
+                    ],
+                    "dataProvider": [
+                        {
+                            "category": "1",
+                            "time-1":"2015-030110",
+                            "column-1": 8,
+                            "time-2":"2015-030210",
+                            "column-2": 5
+                        },
+                        {
+                            "category": "2",
+                            "time-1":"2015-030111",
+                            "column-1": 6,
+                            "time-2":"2015-030211",
+                            "column-2": 7
+                        },
+                        {
+                            "category": "3",
+                            "time-1":"2015-030112",
+                            "column-1": 2,
+                            "time-2":"2015-030212",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "4",
+                            "time-1":"2015-030113",
+                            "column-1": 1,
+                            "time-2":"2015-030213",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "5",
+                            "time-1":"2015-030113",
+                            "column-1": 2,
+                            "time-2":"2015-030213",
+                            "column-2": 1
+                        },
+                        {
+                            "category": "6",
+                            "time-1":"2015-030114",
+                            "column-1": 3,
+                            "time-2":"2015-030214",
+                            "column-2": 2
+                        },
+                        {
+                            "category": "7",
+                            "time-1":"2015-030115",
+                            "column-1": 6,
+                            "time-2":"2015-030215",
+                            "column-2": 8
+                        },{
+                            "category": "1",
+                            "time-1":"2015-030110",
+                            "column-1": 8,
+                            "time-2":"2015-030210",
+                            "column-2": 5
+                        },
+                        {
+                            "category": "2",
+                            "time-1":"2015-030111",
+                            "column-1": 6,
+                            "time-2":"2015-030211",
+                            "column-2": 7
+                        },
+                        {
+                            "category": "3",
+                            "time-1":"2015-030112",
+                            "column-1": 2,
+                            "time-2":"2015-030212",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "4",
+                            "time-1":"2015-030113",
+                            "column-1": 1,
+                            "time-2":"2015-030213",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "5",
+                            "time-1":"2015-030113",
+                            "column-1": 2,
+                            "time-2":"2015-030213",
+                            "column-2": 1
+                        },
+                        {
+                            "category": "6",
+                            "time-1":"2015-030114",
+                            "column-1": 3,
+                            "time-2":"2015-030214",
+                            "column-2": 2
+                        },
+                        {
+                            "category": "7",
+                            "time-1":"2015-030115",
+                            "column-1": 6,
+                            "time-2":"2015-030215",
+                            "column-2": 8
+                        },{
+                            "category": "1",
+                            "time-1":"2015-030110",
+                            "column-1": 8,
+                            "time-2":"2015-030210",
+                            "column-2": 5
+                        },
+                        {
+                            "category": "2",
+                            "time-1":"2015-030111",
+                            "column-1": 6,
+                            "time-2":"2015-030211",
+                            "column-2": 7
+                        },
+                        {
+                            "category": "3",
+                            "time-1":"2015-030112",
+                            "column-1": 2,
+                            "time-2":"2015-030212",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "4",
+                            "time-1":"2015-030113",
+                            "column-1": 1,
+                            "time-2":"2015-030213",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "5",
+                            "time-1":"2015-030113",
+                            "column-1": 2,
+                            "time-2":"2015-030213",
+                            "column-2": 1
+                        },
+                        {
+                            "category": "6",
+                            "time-1":"2015-030114",
+                            "column-1": 3,
+                            "time-2":"2015-030214",
+                            "column-2": 2
+                        },
+                        {
+                            "category": "7",
+                            "time-1":"2015-030115",
+                            "column-1": 6,
+                            "time-2":"2015-030215",
+                            "column-2": 8
+                        },{
+                            "category": "1",
+                            "time-1":"2015-030110",
+                            "column-1": 8,
+                            "time-2":"2015-030210",
+                            "column-2": 5
+                        },
+                        {
+                            "category": "2",
+                            "time-1":"2015-030111",
+                            "column-1": 6,
+                            "time-2":"2015-030211",
+                            "column-2": 7
+                        },
+                        {
+                            "category": "3",
+                            "time-1":"2015-030112",
+                            "column-1": 2,
+                            "time-2":"2015-030212",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "4",
+                            "time-1":"2015-030113",
+                            "column-1": 1,
+                            "time-2":"2015-030213",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "5",
+                            "time-1":"2015-030113",
+                            "column-1": 2,
+                            "time-2":"2015-030213",
+                            "column-2": 1
+                        },
+                        {
+                            "category": "6",
+                            "time-1":"2015-030114",
+                            "column-1": 3,
+                            "time-2":"2015-030214",
+                            "column-2": 2
+                        },
+                        {
+                            "category": "7",
+                            "time-1":"2015-030115",
+                            "column-1": 6,
+                            "time-2":"2015-030215",
+                            "column-2": 8
+                        },{
+                            "category": "1",
+                            "time-1":"2015-030110",
+                            "column-1": 8,
+                            "time-2":"2015-030210",
+                            "column-2": 5
+                        },
+                        {
+                            "category": "2",
+                            "time-1":"2015-030111",
+                            "column-1": 6,
+                            "time-2":"2015-030211",
+                            "column-2": 7
+                        },
+                        {
+                            "category": "3",
+                            "time-1":"2015-030112",
+                            "column-1": 2,
+                            "time-2":"2015-030212",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "4",
+                            "time-1":"2015-030113",
+                            "column-1": 1,
+                            "time-2":"2015-030213",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "5",
+                            "time-1":"2015-030113",
+                            "column-1": 2,
+                            "time-2":"2015-030213",
+                            "column-2": 1
+                        },
+                        {
+                            "category": "6",
+                            "time-1":"2015-030114",
+                            "column-1": 3,
+                            "time-2":"2015-030214",
+                            "column-2": 2
+                        },
+                        {
+                            "category": "7",
+                            "time-1":"2015-030115",
+                            "column-1": 6,
+                            "time-2":"2015-030215",
+                            "column-2": 8
+                        },{
+                            "category": "1",
+                            "time-1":"2015-030110",
+                            "column-1": 8,
+                            "time-2":"2015-030210",
+                            "column-2": 5
+                        },
+                        {
+                            "category": "2",
+                            "time-1":"2015-030111",
+                            "column-1": 6,
+                            "time-2":"2015-030211",
+                            "column-2": 7
+                        },
+                        {
+                            "category": "3",
+                            "time-1":"2015-030112",
+                            "column-1": 2,
+                            "time-2":"2015-030212",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "4",
+                            "time-1":"2015-030113",
+                            "column-1": 1,
+                            "time-2":"2015-030213",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "5",
+                            "time-1":"2015-030113",
+                            "column-1": 2,
+                            "time-2":"2015-030213",
+                            "column-2": 1
+                        },
+                        {
+                            "category": "6",
+                            "time-1":"2015-030114",
+                            "column-1": 3,
+                            "time-2":"2015-030214",
+                            "column-2": 2
+                        },
+                        {
+                            "category": "7",
+                            "time-1":"2015-030115",
+                            "column-1": 6,
+                            "time-2":"2015-030215",
+                            "column-2": 8
+                        },{
+                            "category": "1",
+                            "time-1":"2015-030110",
+                            "column-1": 8,
+                            "time-2":"2015-030210",
+                            "column-2": 5
+                        },
+                        {
+                            "category": "2",
+                            "time-1":"2015-030111",
+                            "column-1": 6,
+                            "time-2":"2015-030211",
+                            "column-2": 7
+                        },
+                        {
+                            "category": "3",
+                            "time-1":"2015-030112",
+                            "column-1": 2,
+                            "time-2":"2015-030212",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "4",
+                            "time-1":"2015-030113",
+                            "column-1": 1,
+                            "time-2":"2015-030213",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "5",
+                            "time-1":"2015-030113",
+                            "column-1": 2,
+                            "time-2":"2015-030213",
+                            "column-2": 1
+                        },
+                        {
+                            "category": "6",
+                            "time-1":"2015-030114",
+                            "column-1": 3,
+                            "time-2":"2015-030214",
+                            "column-2": 2
+                        },
+                        {
+                            "category": "7",
+                            "time-1":"2015-030115",
+                            "column-1": 6,
+                            "time-2":"2015-030215",
+                            "column-2": 8
+                        },{
+                            "category": "1",
+                            "time-1":"2015-030110",
+                            "column-1": 8,
+                            "time-2":"2015-030210",
+                            "column-2": 5
+                        },
+                        {
+                            "category": "2",
+                            "time-1":"2015-030111",
+                            "column-1": 6,
+                            "time-2":"2015-030211",
+                            "column-2": 7
+                        },
+                        {
+                            "category": "3",
+                            "time-1":"2015-030112",
+                            "column-1": 2,
+                            "time-2":"2015-030212",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "4",
+                            "time-1":"2015-030113",
+                            "column-1": 1,
+                            "time-2":"2015-030213",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "5",
+                            "time-1":"2015-030113",
+                            "column-1": 2,
+                            "time-2":"2015-030213",
+                            "column-2": 1
+                        },
+                        {
+                            "category": "6",
+                            "time-1":"2015-030114",
+                            "column-1": 3,
+                            "time-2":"2015-030214",
+                            "column-2": 2
+                        },
+                        {
+                            "category": "7",
+                            "time-1":"2015-030115",
+                            "column-1": 6,
+                            "time-2":"2015-030215",
+                            "column-2": 8
+                        },{
+                            "category": "1",
+                            "time-1":"2015-030110",
+                            "column-1": 8,
+                            "time-2":"2015-030210",
+                            "column-2": 5
+                        },
+                        {
+                            "category": "2",
+                            "time-1":"2015-030111",
+                            "column-1": 6,
+                            "time-2":"2015-030211",
+                            "column-2": 7
+                        },
+                        {
+                            "category": "3",
+                            "time-1":"2015-030112",
+                            "column-1": 2,
+                            "time-2":"2015-030212",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "4",
+                            "time-1":"2015-030113",
+                            "column-1": 1,
+                            "time-2":"2015-030213",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "5",
+                            "time-1":"2015-030113",
+                            "column-1": 2,
+                            "time-2":"2015-030213",
+                            "column-2": 1
+                        },
+                        {
+                            "category": "6",
+                            "time-1":"2015-030114",
+                            "column-1": 3,
+                            "time-2":"2015-030214",
+                            "column-2": 2
+                        },
+                        {
+                            "category": "7",
+                            "time-1":"2015-030115",
+                            "column-1": 6,
+                            "time-2":"2015-030215",
+                            "column-2": 8
+                        },{
+                            "category": "1",
+                            "time-1":"2015-030110",
+                            "column-1": 8,
+                            "time-2":"2015-030210",
+                            "column-2": 5
+                        },
+                        {
+                            "category": "2",
+                            "time-1":"2015-030111",
+                            "column-1": 6,
+                            "time-2":"2015-030211",
+                            "column-2": 7
+                        },
+                        {
+                            "category": "3",
+                            "time-1":"2015-030112",
+                            "column-1": 2,
+                            "time-2":"2015-030212",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "4",
+                            "time-1":"2015-030113",
+                            "column-1": 1,
+                            "time-2":"2015-030213",
+                            "column-2": 3
+                        },
+                        {
+                            "category": "5",
+                            "time-1":"2015-030113",
+                            "column-1": 2,
+                            "time-2":"2015-030213",
+                            "column-2": 1
+                        },
+                        {
+                            "category": "6",
+                            "time-1":"2015-030114",
+                            "column-1": 3,
+                            "time-2":"2015-030214",
+                            "column-2": 2
+                        },
+                        {
+                            "category": "7",
+                            "time-1":"2015-030115",
+                            "column-1": 6,
+                            "time-2":"2015-030215",
+                            "column-2": 8
+                        }
+                    ]
+                }
+        );
+    </script>
+</head>
+<body>
+<div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+</body>
+</html>
